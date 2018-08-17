@@ -1,0 +1,14 @@
+type Pokemon {
+  _id: ID
+  name: String
+  number: String
+}
+
+type Query {
+  findPokemon(_id: String!): Pokemon
+  pokemons: [Pokemon]
+}
+
+type Mutation {
+  getPokemon(number: String): Pokemon
+}
